@@ -1,0 +1,47 @@
+/* Test 1: Valid C- program
+   This comment spans
+   multiple lines */
+
+int gcd(int u, int v) {
+    if (v == 0) return u;
+    else return gcd(v, u - (u / v) * v);
+}
+
+void main(void) {
+    int x;
+    int y;
+    x = 12;
+    y = 144;
+    /* compute greatest common divisor */
+    if (x <= y) {
+        x = gcd(x, y);
+    } else {
+        x = gcd(y, x);
+    }
+    while (x >= 0) {
+        x = x - 1;
+    }
+}
+
+int result_val;
+int count#2;
+int var.next;
+int my$data;
+int abc_xyz;
+
+int nums[10];
+result_val = 3.14;
+result_val = 3.;
+result_val = .14;
+result_val = 42;
+result_val = 6.022E23;
+result_val = 1.5e-10;
+result_val = 100E+3;
+result_val = 99e10;
+
+x != y;
+x == y;
+x >= y;
+x <= y;
+x > y;
+x < y;
